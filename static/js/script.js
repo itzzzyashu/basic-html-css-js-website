@@ -1,6 +1,6 @@
-// document.addEventListener("contextmenu", (e) => {
-//   e.preventDefault();
-// });
+document.addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+});
 
 $(document).on("click", "ul li", function () {
   $(this).addClass("n-active").siblings().removeClass("n-active");
