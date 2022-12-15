@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.wrapper {
+    position: sticky;
+    top:0%;
+    background: #00000082;
+    width: 100%;
+    z-index: 10;
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 0;
+    padding: 0px 0px 0px 0px;
+}
+
+.wrapper nav {
+    max-width: calc(100% - 200px);
+    display: flex;
+    max-width: calc(100% - 200px);
+    margin: 0 auto;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .content {
+    display: flex;
+    align-items: center;
+}
+
+nav .content .links {
+    margin-left: 5px;
+    display: flex;
+}
+
+.content .logo a {
+    display: flex;
+    text-decoration: none;
+}
+
+.content .logo p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 4px;
+    margin-bottom: 0rem;
+}
+
+.logo img {
+    border-radius: 100%;
+    display: flex;
+    padding: 5px;
+    width: 25%;
+}
+
+@media screen and (max-width:400px) {
+    .logo img {
+    border-radius: 100%;
+    display: flex;
+    width: 30%;
+    }
+}
+
+.content .links li {
+    list-style: none;
+    line-height: 70px;
+}
+
+.content .links li a,
+.content .links li label {
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 0px;
+    font-weight: 500;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.content .links li label:hover,
+.content .links li a:hover,
+.content > .links > li.n-active > a{
+    color:#00FFFF;
+}
+
+.content .links ul > li a:hover{
+    color:#00FFFF;
+}
+
+.content .links li label {
+    display: none;
+}
+
+.content .links li a:hover,
+.content .links li label:hover {
+    text-decoration: none;
+}
+
+.wrapper .search-icon,
+.wrapper .menu-icon {
+    line-height: 50px;
+    color: rgb(255, 0, 0);
+    height: 80%;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper .menu-icon {
+    display: none;
+}
+
+.wrapper #show-search:checked~.search-icon i::before {
+    content: "\f00d";
+}
+
+.wrapper .search-box {
+    height: 100%;
+    width: 87%;
+    position: absolute;
+    max-width: calc(100% - 50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper #show-search:checked~.search-box {
+    opacity: 1;
+    top: 5px;
+    pointer-events: auto;
+}
+
+.search-box input {
+    width: 100%;
+    height: 80%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000e6;
+    border-radius: 5px;
+    padding: 0px 10px 0px 10px;
+}
+    
+.search-box input::placeholder {
+    color: #ffffff;
+}
+
+.search-box .go-icon {
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    transform: translateY(-50%);
+    line-height: 30px;
+    width: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00aeff;
+    opacity: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.go-icon:hover {
+    text-shadow: 2px 2px 2px 2px blue;
+    background: transparent;
+    color: #00d9ff;
+}
+
+.wrapper input[type="checkbox"] {
+    display: none;
+}
+
+/* Dropdown Menu code start */
+.content .links ul {
+    position: absolute;
+    background: #00000082;
+    top: 50px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.content .links li:hover>ul {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+.content .links li:hover>ul>ul {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.content .links ul li a {
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    text-decoration: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;}
+
+.content .links ul ul {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 8px);
+}
+
+.content .links ul li {
+    position: relative;
+}
+
+.content .links ul li:hover ul {
+    top: 0;
+}

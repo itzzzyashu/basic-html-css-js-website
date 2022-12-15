@@ -1,0 +1,20 @@
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  #contact-me .contact-textarea {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 550px) {
+  #contact-me .contact-textarea {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 430px) {
+  #contact-me .contact-textarea {
+    width: 62%;
+  }
+}
+@media screen and (min-width: 1383px) and (max-width: 1800px) {
+  #contact-me .contact-textarea {
+    width: 30%;
+  }
+}

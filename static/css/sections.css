@@ -1,0 +1,69 @@
+section{
+  width: 100%;
+  margin:auto;
+}
+
+#home{
+  height: 3rem;
+}
+
+#home h1{
+  color:#ffffff
+}
+
+#contact-me {
+  padding: 4rem 1rem 4rem 1rem;
+  display: flex;
+}
+
+#contact-me span {
+  display: inline-block;
+}
+
+#contact-me label {
+  margin-top: 2rem;
+  color: white;
+  display: block;
+}
+
+#contact-me h2 {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 50px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+#contact-me .contact-input,
+#contact-me  .contact-textarea{
+  display: flex;
+  margin: 2px;
+  background-color: #00000052;
+  color: #ffffff;
+  outline: none;
+  border: 0px;
+  padding-left: 5px;
+  border-bottom: 2px solid #1eff00;
+}
+
+
+#contact-me .contact-input{
+  width: 100%;
+}
+
+#contact-me .contact-textarea{
+  width: 24em;
+}
+
+#contact-me .contact-input::placeholder,
+#contact-me .contact-textarea::placeholder {
+  color: #fffefe91;
+  font-size: 15px;
+}
+
+/* Custom tag for reuired value  */
+reqr {
+  color: #ff0000;
+  font-size: 15px;
+}
